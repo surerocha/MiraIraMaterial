@@ -10,8 +10,6 @@ body {
   min-height: 100vh;
   position: relative;
   margin-bottom: 50%; /* Adicione uma margem na parte inferior do corpo para deixar espaço para o footer */
-  /* background-color: #f9f9f9; */
-  
 }
 /* Estilos dos contêineres de imagem */
 .image-container {
