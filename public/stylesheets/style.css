@@ -1,0 +1,274 @@
+html, body{
+  height: 100%; /*era só isso*/
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  color: white; /* Branco */
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  position: relative;
+  margin-bottom: 50%; /* Adicione uma margem na parte inferior do corpo para deixar espaço para o footer */
+  /* background-color: #f9f9f9; */
+  
+}
+/* Estilos dos contêineres de imagem */
+.image-container {
+  display: inline-block;
+  width: calc(30% - 20px); /* Largura ajustada com margem interna de 10px em cada lado */
+  margin: 10px; /* Margem externa */
+  text-align: center;
+  vertical-align: top; /* Alinha as imagens pela parte superior */
+  padding: 20px; /* Adiciona espaçamento entre as imagens */
+  background-color: #990000; /* Vermelho escuro */
+  border-radius: 10px; /* Borda arredondada */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Sombra */
+}
+
+/* Estilos das imagens */
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block; /* Garante que as imagens não tenham espaços em branco abaixo delas */
+}
+/* Estilos das descrições das imagens */
+.image-description {
+  margin-top: 10px;
+  color: #EE9E07; /* Laranja */
+}
+
+/* Estilos para o texto em formato de lista */
+.image-container ul {
+  text-align: left;
+  color: #fff; /* Amarelo */
+  margin-top: 5%;
+}
+
+/* Estilos para o texto normal */
+.image-container p {
+  text-align: justify;
+  color: #FFCC00;
+}
+
+/* Centralizar trio de imagens */
+.container-centralizado {
+  text-align: center;
+  display: flex; /* Usa flexbox para alinhar os itens */
+  justify-content: space-between; /* Distribui os itens igualmente ao longo do eixo principal */
+  margin: 0 auto; /* Centraliza o container */
+  max-width: 2000px; /* Define a largura máxima do container */
+  padding: 5%;
+}
+
+h1{
+  text-align: center; 
+  color: #E85B0C !important;
+  padding: -50px;
+  font-style: bold;
+  padding-top: 50px;
+  font-size: 65px;
+  font-weight: italic;
+  
+}
+
+h2{
+  text-align: center;
+  color: #FFFFFF; 
+  font-style: italic;
+  font-style: bold;
+}
+
+/* Estilos para o cabeçalho */
+.header {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   background-color: #FFFFFF;
+   padding: 10px 0;
+   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+   z-index: 1000;
+ }
+
+/* Estilos para o logotipo */
+.header-logo {
+   float: left;
+   margin-left: 20px;
+   padding-right: 40px;
+   padding-top: 0px;
+ }
+
+.header-logo img {
+   height: 50px;
+   transition: transform 0.3s ease;
+ }
+
+.header-logo img:hover {
+   transform: rotate(360deg);
+ }
+
+/* Estilos para os links de navegação */
+.nav-link {
+   color: #990000 !important; /* Usando !important para garantir a prioridade */
+}
+
+.background-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    /* Ajuste de estilo para a imagem de fundo */
+}
+
+.content {
+    position: relative; /* Para garantir que o conteúdo esteja acima da imagem de fundo */
+    text-align: center;
+    padding: 100px 0;
+    color: #fff;
+}
+
+.content h1 {
+  text-align: center;
+  color: white !important;
+  font-size: 65px;
+  padding-top: -15%;
+  font-weight: bold; 
+  font-style: italic;
+}
+.content h4{
+  text-align: center;
+  font-size: 20px;
+  margin-top: -10%;
+  font-weight: bold; 
+  font-style: italic;
+}
+h4{
+  text-align: center;
+  font-size: 20px;
+  padding: 5%;
+  font-weight: bold; 
+  font-style: italic;
+}
+
+.content h3{
+  text-align: center;
+  margin-top: -1%;
+  font-size: 22px;
+  font-style: italic;
+  
+}
+
+.link-body-emphasis {
+  color: white !important; /* Cor do texto do link */
+  font-size: 100%; /* Tamanho da fonte */
+  
+}
+
+.link-body-emphasis:hover {
+  opacity: 0.75; /* Opacidade ao passar o mouse */
+}
+
+.footer-text{
+  margin-top: 5%;
+}
+
+.header {
+  position: relative; /* Define a posição relativa para que o posicionamento absoluto da barra de pesquisa seja relativo à header */
+}
+
+.search-form {
+  position: absolute; /* Define a posição absoluta para a barra de pesquisa */
+  top: 10px; /* Ajusta a distância do topo da header */
+  right: 10px; /* Ajusta a distância da direita da header */
+}
+
+/* Estilos para a barra de pesquisa */
+.search-form input[type="text"] {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.search-form button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #990000;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Efeito de transição suave */
+}
+
+/* Alterar cor do botão ao passar o mouse */
+.search-form button[type="submit"]:hover {
+  background-color: #770000;
+}
+
+.container-about1 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+.container-about1 h1 {
+    color: #fff;
+}
+.container-about1 p {
+    color: #fff;
+}
+.container-about1 h2 {
+    color: #fff;
+    padding: 3%;
+}
+/* Estilos específicos */
+.banner {
+    background-image: url('/images/imgTdMundo.jpg');
+    background-size: cover;
+    height: 150%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+.sobre-container1 {
+    background-color: #E85B0C;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.container-about2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+.container-about2 h1 {
+    color: #fff;
+}
+.container-about2 p {
+    color: #fff;
+}
+.container-about2 h2 {
+    color: #fff;
+    padding: 3%;
+}
+.sobre-container2 {
+    background-color: #CA2604;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+#imgSuite{
+  width: 100%; /* Largura da foto */
+    height: auto; /* Altura ajustada automaticamente para manter a proporção */
+    border-radius: 5px; /* Borda arredondada */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); /* Sombra */
+  }
+
+}
