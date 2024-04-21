@@ -1,5 +1,5 @@
-# Projeto MiraIraMaterial
-***Repositório destinado ao armazenado do projeto MiraIraMaterial relacionado à disciplina Programação Web.***
+# Projeto MiraIraMaterial - Programação Web
+***Repositório destinado ao armazenado do projeto MiraIraMaterial relacionado à disciplina Programação Web lecionada pelo professor José Roberto.***
 
 *O MiraIraMaterial foi criado com a finalidade de contalibizar e organizar o material e figurino do grupo. Além disso, ele também separa cada material por coreografia, sendo assim exibe a quantidade presente no acervo do MiraIra.*
 
