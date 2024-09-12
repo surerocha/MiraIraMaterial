@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figurinos - <%= title %></title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <%- include('partials/header') %>
+
+    <div class="container mt-4">
+        <h2>Lista de Figurinos</h2>
+        <a href="/figurinos/new" class="btn btn-success mb-3">Adicionar Novo Figurino</a>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Tipo</th>
+                    <th>Descrição</th>
+                    <th>Dança</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% figurinos.forEach(figurino => { %>
+                <tr>
+                    <td><%= figurino.tipo %></td>
+                    <td><%= figurino.descricao %></td>
+                    <td><%= figurino.danca %></td>
+                    <td>
+                        <a href="/figurinos/edit/<%= figurino._id %>" class="btn btn-warning">Editar</a>
+                        <form action="/figurinos/<%= figurino._id %>?_method=DELETE" method="POST" class="d-inline">
+                            <button type="submit" class="btn btn-danger">Deletar</button>
+                        </form>
+                    </td>
+                </tr>
+                <% }) %>
+            </tbody>
+        </table>
+    </div>
+
+    <%- include('partials/footer') %>
+</body>
+</html>
