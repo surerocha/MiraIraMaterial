@@ -146,6 +146,11 @@ app.delete('/materiais/:id', async (req, res) => {
     }
 });
 
+// Adicionar rota para a página 'sobre'
+app.get('/sobre', (req, res) => {
+    res.render('sobre'); // Certifique-se de que o arquivo e o nome da página estão corretos
+});
+
 // Iniciar o servidor
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
