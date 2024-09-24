@@ -95,3 +95,90 @@ Feito com ❤️ por [Sure Rocha](https://github.com/surerocha).
 - **Substitua `<usuario>` e `<senha>`** pelo seu nome de usuário e senha do MongoDB.
 - **Substitua `seuemail@example.com`** e `Seu Nome` com suas informações de contato.
 - **Adapte a descrição e os detalhes** conforme o projeto evolui.
+
+
+
+Claro! Aqui está um modelo de README.md que você pode usar para o seu projeto. Sinta-se à vontade para personalizar conforme necessário.
+
+```markdown
+# MiraIraMaterial
+
+Este é o projeto **MiraIraMaterial**, um aplicativo web que visa promover e celebrar a cultura popular do Grupo MiraIra. O projeto foi desenvolvido utilizando tecnologias como Node.js, Express e EJS.
+
+## 📦 Funcionalidades
+
+- **Homepage**: Uma página de boas-vindas que introduz o grupo.
+- **Materiais**: Uma seção onde você pode visualizar e buscar materiais.
+- **Figurinos**: Apresentação dos figurinos usados nas apresentações.
+- **Sobre**: Informações sobre o grupo e a autoria do site.
+
+## 🔧 Pré-requisitos
+
+Antes de executar o projeto, você precisa ter o seguinte instalado:
+
+- [Node.js](https://nodejs.org/)
+- [npm](https://www.npmjs.com/) (geralmente já vem com o Node.js)
+
+## 🚀 Como executar
+
+1. **Clone o repositório**
+
+   ```bash
+   git clone https://github.com/surerocha/MiraIraMaterial.git
+   ```
+
+2. **Navegue até o diretório do projeto**
+
+   ```bash
+   cd MiraIraMaterial
+   ```
+
+3. **Instale as dependências**
+
+   ```bash
+   npm install
+   ```
+
+4. **Inicie o servidor**
+
+   ```bash
+   npm start
+   ```
+
+   O aplicativo estará disponível em `http://localhost:3000` (ou outra porta se você configurou de maneira diferente).
+
+## 🔍 Testando
+
+- Abra seu navegador e acesse `http://localhost:3000` para visualizar a homepage.
+- Explore as seções "Materiais", "Figurinos" e "Sobre" para conhecer mais sobre o Grupo MiraIra.
+
+## 🛠️ Tecnologias Utilizadas
+
+- **Backend**: Node.js, Express
+- **Frontend**: HTML, CSS, EJS
+- **Banco de Dados**: MongoDB (se aplicável)
+
+## 🤝 Contribuições
+
+Contribuições são bem-vindas! Sinta-se à vontade para abrir um *issue* ou enviar um *pull request*.
+
+## 📄 Licença
+
+Este projeto está licenciado sob a MIT License - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+## 👤 Autor
+
+- **Sure Rocha Bezerra** - [GitHub](https://github.com/surerocha)
+
+---
+
+Sinta-se à vontade para adicionar qualquer outra informação relevante que você achar necessário!
+```
+
+### Como Usar
+
+1. **Crie um arquivo chamado `README.md` na raiz do seu projeto**.
+2. **Cole o conteúdo acima no arquivo**.
+3. **Personalize conforme necessário** (como detalhes específicos do seu projeto ou outras informações importantes).
+
+Se precisar de mais alguma coisa, é só avisar!
