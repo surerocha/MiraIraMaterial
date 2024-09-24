@@ -12,6 +12,7 @@ mongoose.connect('mongodb+srv://surerochab:Bezerra281207@cluster0sureprojects.pg
 app.set('view engine', 'ejs');
 app.use(express.urlencoded({ extended: true })); // Para processar dados de formulários
 app.use(methodOverride('_method')); // Para suportar PUT e DELETE em formulários
+app.use(express.static('public'));
 
 // Middleware para interpretar JSON
 app.use(express.json());

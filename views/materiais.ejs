@@ -5,40 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Materiais - <%= title %></title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/style.css"> <!-- Link para seu CSS personalizado -->
 </head>
 <body>
     <%- include('partials/header') %>
 
     <div class="container mt-4">
-        <h2>Lista de Materiais</h2>
+        <h2 class="mb-4">Lista de Materiais</h2>
         <a href="/materiais/new" class="btn btn-success mb-3">Adicionar Novo Material</a>
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>Nome</th>
-                    <th>Descrição</th>
-                    <th>Quantidade</th>
-                    <th>Dança</th>
-                    <th>Ações</th>
-                </tr>
-            </thead>
-            <tbody>
-                <% materiais.forEach(material => { %>
-                <tr>
-                    <td><%= material.nome %></td>
-                    <td><%= material.descricao %></td>
-                    <td><%= material.quantidade %></td>
-                    <td><%= material.danca %></td>
-                    <td>
-                        <a href="/materiais/edit/<%= material._id %>" class="btn btn-warning">Editar</a>
-                        <form action="/materiais/<%= material._id %>?_method=DELETE" method="POST" class="d-inline">
-                            <button type="submit" class="btn btn-danger">Deletar</button>
-                        </form>
-                    </td>
-                </tr>
-                <% }) %>
-            </tbody>
-        </table>
+        <div class="table-responsive">
+            <table class="table table-striped table-hover">
+                <thead class="table-light">
+                    <tr>
+                        <th>Nome</th>
+                        <th>Descrição</th>
+                        <th>Quantidade</th>
+                        <th>Dança</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% materiais.forEach(material => { %>
+                    <tr>
+                        <td><%= material.nome %></td>
+                        <td><%= material.descricao %></td>
+                        <td><%= material.quantidade %></td>
+                        <td><%= material.danca %></td>
+                        <td>
+                            <a href="/materiais/edit/<%= material._id %>" class="btn btn-warning">Editar</a>
+                            <form action="/materiais/<%= material._id %>?_method=DELETE" method="POST" class="d-inline">
+                                <button type="submit" class="btn btn-danger">Deletar</button>
+                            </form>
+                        </td>
+                    </tr>
+                    <% }) %>
+                </tbody>
+            </table>
+        </div>
     </div>
 
     <%- include('partials/footer') %>

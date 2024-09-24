@@ -1,0 +1,284 @@
+:root {
+    --cor-fundo: #f8f9fa;
+    --cor-header-footer: #990000;
+    --cor-destaque: #ee9e07;
+    --cor-texto: #333;
+    --cor-texto-secundario: #6c757d;
+    --cor-borda: #ced4da;
+    --cor-fundo-tabela: #fff;
+    --cor-fundo-tabela-escura: #343a40;
+    --cor-titulo: #343a40;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--cor-fundo);
+}
+
+.header {
+    background-color: var(--cor-header-footer);
+    padding: 20px 0;
+    color: white; 
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    flex: 1; /* Faz a logo ocupar o espaço da esquerda */
+}
+
+.header-logo .logo {
+    width: 150px; /* Ajuste o tamanho da logo */
+    margin-left: 20px;
+}
+
+.nav {
+    list-style-type: none;
+    padding: 0; 
+}
+
+.nav-item {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--cor-destaque);
+}
+
+.search-form {
+    margin-top: 10px;
+}
+
+.search-input {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-button {
+    background-color: transparent;
+    color: white;
+    border-color: var(--cor-destaque);
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: var(--cor-destaque);
+    border-color: var(--cor-destaque);
+    color: white
+}
+
+.footer {
+    background-color: var(--cor-header-footer);
+    color: white;
+    padding: 10px 0;
+}
+
+.footer-link {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+}
+
+.footer-link:hover {
+    color: var(--cor-destaque);
+}
+
+.footer-text {
+    margin-top: 20px;
+    font-size: 10px;
+}
+
+h2 {
+    color: var(--cor-titulo);
+    margin-top: 20px; /* Espaço acima dos subtítulos */
+}
+
+.form-control, .form-select {
+    border: 1px solid var(--cor-borda);
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.btn {
+    background-color: white; /* Fundo branco */
+    color: var(--cor-texto); /* Cor do texto */
+    border: 2px solid; /* Borda de espessura 2px */
+    padding: 5px 10px; /* Espaçamento interno do botão */
+    font-size: 1rem; /* Tamanho do texto do botão */
+    transition: background-color 0.3s, color 0.3s; /* Transições suaves */
+    margin-right: 10px; /* Espaçamento entre botões */
+    margin-top: 10px;;
+}
+
+.btn:last-child {
+    margin-right: 0; /* Remove a margem do último botão */
+}
+
+.btn-success {
+    border-color: #28a745; /* Cor da borda para sucesso */
+}
+
+.btn-warning {
+    border-color: #ffc107; /* Cor da borda para aviso */
+}
+
+.btn-danger {
+    border-color: #dc3545; /* Cor da borda para perigo */
+}
+
+.btn:hover {
+    background-color: transparent; /* Fundo transparente ao passar o mouse */
+    color: transparent; /* Torna o texto transparente */
+}
+
+/* Ajustes específicos para os botões de sucesso, aviso e perigo */
+.btn-success:hover {
+    background-color: #28a745; /* Cor de fundo ao passar o mouse */
+    color: white; /* Cor do texto ao passar o mouse */
+}
+
+.btn-warning:hover {
+    background-color: #ffc107; /* Cor de fundo ao passar o mouse */
+    color: white; /* Cor do texto ao passar o mouse */
+}
+
+.btn-danger:hover {
+    background-color: #dc3545; /* Cor de fundo ao passar o mouse */
+    color: white; /* Cor do texto ao passar o mouse */
+}
+
+.bg-light {
+    background-color: #ffffff !important;
+}
+
+.shadow {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.table {
+    background-color: var(--cor-fundo-tabela);
+    border-radius: 0.5rem;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f2f2f2;
+}
+
+.table-dark {
+    background-color: var(--cor-fundo-tabela-escura);
+    color: white;
+}
+
+.table th, .table td {
+    vertical-align: middle;
+}
+
+.background-container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.5);
+}
+
+.content {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+
+.container {
+    max-width: 1500px;
+    margin-top: 20px;
+}
+
+.form-label {
+    font-weight: 500; /* Negrito para as labels */
+}
+
+.banner {
+    background-image: url('/images/imgTdMundo.jpg'); /* URL da imagem de fundo */
+    background-size: cover; /* Para cobrir toda a área */
+    background-position: center; /* Centraliza a imagem */
+    height: 150vh; /* Ajuste a altura conforme necessário */
+    display: flex; /* Flexbox para centrar o conteúdo */
+    align-items: center; /* Alinha verticalmente */
+    justify-content: center; /* Alinha horizontalmente */
+    color: white; /* Cor do texto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra no texto para melhor legibilidade */
+}
+
+
+.banner h1 {
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+}
+
+.banner h3 {
+    font-size: 1.5rem;
+}
+
+.sobre-container {
+    background-color: var(--cor-fundo);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-description {
+    font-size: 0.9rem;
+    color: var(--cor-texto-secundario);
+    margin-top: 10px;
+}
